@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Qualifications</title>
+    <style>
+         #menu ul{
+            display: inline-flex;
+            position: relative;
+            justify-content: center;
+            font-size: larger;
+            padding-right:0%;
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
+            padding: 10px 5px 10px 5px;
+        }
+
+        li{
+            display: inline;
+            position: relative;
+            /* text-align: center; */
+            justify-content: center;
+            padding-left: 30px;
+            padding-right: 30px;
+            transition: transform 2s;
+        }
+        li:hover{
+            transform: scale(1.2,1.2);
+        }
+        .menu1:hover{
+            border: 2px solid white;
+            border-radius: 30px;
+            background-color: white;
+            color: black;
+            /* background-image: radial-gradient(purple, black); */
+        }
+        .menu1{
+            padding: 5px;
+            /* border: 2px solid red; */
+        }
+
+        nav{
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            background-color: black;
+        }
+
+         body{
+        margin: 0px;
+        padding: 0px;
+
+        }
+        nav{
+          justify-content: center;
+        }
+        #menu2{
+            padding-right: 0px;
+            margin-left: 275px;
+            margin-right: 280px;
+            font-size: larger;
+        }
+        #menu2 ul{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        #menu2 ul li {
+            padding-right: 20px;
+            padding-left: 25px;
+        }
+
+
+        #qualification{
+            background-image: linear-gradient(black,rgb(113, 0, 113),black);
+            height: 1100px;
+            margin-top: 0px;
+            padding-top: 0.5px;
+        }
+
+        #q_title{
+            color: white;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            position: relative;
+            display:flex;
+            border-top: 4px double white;
+            border-bottom: 4px double white;
+            border-radius: 5%;
+            font-size: 23px;
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-top: 20px;
+            padding: 20px;
+            align-items: center;
+            text-align: center;
+            /* display: flex; */
+            justify-content: center;
+        }
+        .timeline{
+            position: relative;
+            max-width: 1200px;
+            margin: 30px 100px 30px 100px;
+        }
+        .container{
+            padding: 1px 0px;
+            position: relative;
+            width: 50%;
+            animation: movedown 1s linear forwards;
+            opacity: 0;
+        }
+        @keyframes movedown {
+            0%{
+                opacity: 1;
+                transform: translateY(-30px);
+            }
+            100%{
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+        /* animation delay */
+        .container:nth-child(1){
+            animation-delay: 0s;
+        }
+        .container:nth-child(2){
+            animation-delay: 1s;
+        }
+        .container:nth-child(3){
+            animation-delay: 2s;
+        }
+        .container:nth-child(4){
+            animation-delay: 3s;
+        }
+        .container:nth-child(5){
+            animation-delay: 4s;
+        }
+        .container:nth-child(6){
+            animation-delay: 5s;
+        }
+
+        .textbox{
+            padding: 10px 40px;
+            background-image: linear-gradient(to left,rgb(247, 154, 247),white,rgb(239, 167, 239));
+            /* background-color: white; */
+            border: 2px solid white;
+            position: relative;
+            text-align: center;
+            margin: 10px 50px;
+            border-radius: 10px;
+            font-size: 15px;
+
+        }
+        .dot {
+            height: 33px;
+            width: 25px;
+            background-color: white;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        
+        .left-container{
+            left: 0%;
+            transition: transform .4s;
+        }
+        small{
+            font-size:large;
+        }
+        .right-container{
+            left: 50%;
+        }
+        .container .dot{
+            position: absolute;
+            width: 40px;
+            right: -19px;
+            top: 33px;
+            z-index: 10;
+        }
+        .right-container .dot{
+            left: -20px;
+        }
+        .timeline::after{
+            content: ' ';
+            position: absolute;
+            width: 6px;
+            height: 100%;
+            background: white;
+            top: 0;
+            left: 50%;
+            margin-left: -3px;
+            z-index: 1;
+            animation: moveline 6s linear forwards;
+        }
+        @keyframes moveline{
+            0%{
+                height: 0%;
+            }
+            100%{
+                height: 100%;
+            }
+        }
+        .textbox h3{
+            margin-bottom: 0px;
+            margin-top: 10px;
+        }
+        .textbox h4{
+            margin-bottom: 6px;
+            margin-top: 8px;
+            font-size: large;
+        }
+        .textbox small{
+            margin-top: 20px;
+        }
+        .textbox h2{
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .left-container-arrow{
+            height: 0;
+            width: 0;
+            position: absolute;
+            top: 28px;
+            z-index: 1;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            border-left:  15px solid white;
+            right: -14px;
+        }
+        .right-container-arrow{
+            height: 0;
+            width: 0;
+            position: absolute;
+            top: 28px;
+            z-index: 1;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            border-right:  15px solid white;
+            left: -14px;
+        }
+    </style>
+</head>
+<body>
+    <section id="qualification">
+        <nav>
+            <div id="menu2">
+                <ul>
+                    <li>
+                        <a class="menu1" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="menu1" href="about.html">About Me</a>
+                    </li>
+                    <li>
+                        <a class="menu1" href="skill.html">Skills</a>
+                    </li>
+                    <li>
+                        <a class="menu1" href="project.html">Projects</a>
+                    </li>
+                    <li>
+                        <a class="menu1" href="contact.html">Contact Me</a>
+                    </li>
+                </ul>
+            </div> 
+        </nav>
+        <div>
+            <span id="q_title">Educational Qualification</span>
+        </div>
+        <div class="timeline">
+            <div class="container left-container">
+                <span class="dot"></span>
+                <div class="textbox">
+                    <h2>Master of Computer Application</h2>
+                    <!-- <h4></h4> -->
+                    <h3>Goa University</h3>
+                    <small>2022-Present</small>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
+            <div class="container right-container">
+                <span class="dot"></span>
+                <div class="textbox">
+                    <h2>Diploma In Java</h2>
+                    <!-- <h4>Master of Computer Applications</h4> -->
+                    <h3>FirstBit Solutions, Pune</h3>
+                    <small>2021-2022</small>
+                    <span class="right-container-arrow"></span>
+                </div>
+            </div>
+            <div class="container left-container">
+                <span class="dot"></span>
+                <div class="textbox">
+                    <h2>B.Sc.(Honours) Physics</h2>
+                    <!-- <h4></h4> -->
+                    <h3>Dhempe college of Arts and Science, Panaji</h3>
+                    <small>2017-2020</small>
+                    <h4>CGPA: 7.72</h4>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
+            <div class="container right-container">
+                <span class="dot"></span>
+                <div class="textbox">
+                    <!-- <h2>Certificaton</h2> -->
+                    <h2>Diploma In Computer Management</h2>
+                    <h3>Stenodac, Panaji</h3>
+                    <small>2018-2019</small>
+                    <h4>Percentage: 95.00%</h4>
+                    <span class="right-container-arrow"></span>
+                </div>
+            </div>
+            <div class="container left-container">
+                <span class="dot"></span>
+                <div class="textbox">
+                    <h2>HSSC</h2>
+                    <!-- <a href="https://www.facebook.com/people/Peoples/100063801883644/" target="_blank"> -->
+                        <h3>
+                        Peoples' Higher Secondary School, Panaji
+                        </h3>
+                    <!-- </a> -->
+                    <small>2015-2017</small>
+                    <h4>Percentage: 67.00%</h4>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
+            <div class="container right-container">
+                <span class="dot"></span>
+                <div class="textbox">
+                    <h2>SSC</h2>
+                    <h3>Mushtifund High School, Panaji</h3>
+                    <small>2004-2015</small>
+                    <h4>Percentage: 82.00%</h4>
+                    <span class="right-container-arrow"></span>
+                </div>
+            </div>
+        </div>
+        <!-- <a class="top" href="#home">Top
+            <i class="arrow up"></i>
+        </a> -->
+    </section>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <style>
+
+#menu ul{
+            display: inline-flex;
+            position: relative;
+            justify-content: center;
+            font-size: larger;
+            padding-right:0%;
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
+            padding: 10px 5px 10px 5px;
+        }
+
+        li{
+            display: inline;
+            position: relative;
+            /* text-align: center; */
+            justify-content: center;
+            padding-left: 30px;
+            padding-right: 30px;
+            transition: transform 2s;
+        }
+        li:hover{
+            transform: scale(1.2,1.2);
+        }
+        .menu1:hover{
+            border: 2px solid white;
+            border-radius: 30px;
+            background-color: white;
+            color: black;
+            /* background-image: radial-gradient(purple, black); */
+        }
+        .menu1{
+            padding: 5px;
+            /* border: 2px solid red; */
+        }
+
+        nav{
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            background-color: black;
+        }
+
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        nav{
+          justify-content: center;
+        }
+        #menu2{
+            padding-right: 0px;
+            margin-left: 275px;
+            margin-right: 280px;
+            font-size: larger;
+        }
+        #menu2 ul{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        #menu2 ul li {
+            padding-right: 20px;
+            padding-left: 25px;
+        }
+
+
+
+        /* projects css*/
+        #project{
+            padding-bottom: 20px;
+            height: 650px;
+            margin-top: 0px;
+            padding-top: 0.5px;
+            /* color: white; */
+            background-image: radial-gradient(rgb(107, 3, 107), black);
+        }
+        #proj_title{
+            color: white;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            position: relative;
+            display:flex;
+            border-top: 4px double white;
+            border-bottom: 4px double white;
+            border-radius: 5%;
+            font-size: 23px;
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-top: 20px;
+            padding: 20px;
+            align-items: center;
+            text-align: center;
+            /* display: flex; */
+            justify-content: center;
+        }
+        #row{
+            /* border: 2px solid white; */
+            margin-left: 3%;
+            margin-right: 3%;
+            height: 74%;
+        }
+        .projs{
+            border: 3px double white;
+            background-image: linear-gradient(black, purple);
+            border-radius: 30px;
+            margin-top: 2%;
+            margin-left: 20%;
+            margin-right: 20%;
+            padding-bottom: 1.7%;
+            height: 20%;
+            color: white;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            animation: movedown_proj 1s linear forwards;
+            opacity: 0;
+            /* transition: transform .4s; */
+        }
+        @keyframes movedown_proj {
+            0%{
+                opacity: 1;
+                transform: translateY(-20px);
+            }
+            100%{
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+
+        .projs:nth-child(1){
+            animation-delay: 0s;
+        }
+        .projs:nth-child(2){
+            animation-delay: 1s;
+        }
+        .projs:nth-child(3){
+            animation-delay: 2s;
+        }
+
+        .projs:hover{
+            /* transform: scale(1.04,1.04); */
+            background-image: linear-gradient(to left,rgb(250, 147, 250),white,rgb(250, 147, 250));
+            color: rgb(79, 0, 79); 
+            border: 3px solid rgb(85, 3, 85);
+        }
+        .projs a h2{
+            margin-top: -3px;
+        }
+        .projs a{
+            margin-top: 10px;
+        }
+        .projs a:hover{
+            color: rgb(79, 0, 79);;
+        }
+
+
+    </style>
+</head>
+<body>
+     <!-- Projects -->
+     <section id="project">
+        <nav>
+            <!-- <div id="name_menu">
+                <a href="#about">Portfolio</a>
+            </div> -->
+            <div id="menu2">
+                <ul>
+                    <li>
+                        <a class="menu1" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="menu1" href="about.html">About Me</a>
+                    </li>
+                    <li>
+                        <a class="menu1" href="qualification.html">Qualification</a>
+                    </li>
+                    <li>
+                        <a class="menu1" href="skill.html">Skills</a>
+                    </li>
+                    <li>
+                        <a class="menu1" href="contact.html">Contact Me</a>
+                    </li>
+                </ul>
+            </div> 
+        </nav>
+        <div>
+            <span id="proj_title">Projects</span>
+        </div>
+        <div id="row">
+            <div class="projs">
+                <a href="https://github.com/shubham26gaonkar/Gym-Management-System" target="_blank">
+                    <h2>Gym Management System</h2>
+                    <h4>Data Structure & Algorithm in C Language</h4>
+                </a>
+            </div>
+            <div class="projs">
+                <a href="https://github.com/nageshchari/pacmanoop" target="_blank">
+                    <h2>PacMan Game</h2>
+                    <h4>Object Oriented Programming in Java</h4>
+                </a>
+            </div>
+            <div class="projs">
+                <a href="https://github.com/shubham26gaonkar/gshubham" target="_blank">
+                    <h2>Personal Portfolio</h2>
+                    <h4>HTML & CSS</h4>
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

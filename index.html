@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body{
+        margin: 0px;
+        padding: 0px;
+
+        }
+        /* home Page CSS*/
+        #coverbg{
+            height: 600px;
+            background-image: url(flyhigh1.jpg);
+            background-size: contain;
+            background-position: center;
+            height: auto;
+            width: 100%;
+        }
+        #home{
+            height:600px;
+            color: white;
+            background-image: radial-gradient(purple, black);
+            opacity: 85%;
+        }
+        #menu {
+            padding-right: 38px;
+            margin-left: 224px;
+            margin-right: 230px;
+        }
+        #name_menu{
+            display: inline-block;
+            position: relative;
+            text-align: center;
+            font-size: larger;
+            margin-left: 20px;
+            padding: 10px 5px;
+            padding-top: 15px;
+            /* border: 2px solid red; */
+            transition: transform .4s;
+        } 
+        #name_menu:hover{
+            /* background-color: palevioletred; */
+            transform: scale(1.1,1.1);
+        }
+        #name_menu:hover{
+            border-radius: 30px;
+            background-image: radial-gradient(purple,black);
+            border: 2px solid white;
+        }
+        #menu ul{
+            display: inline-flex;
+            position: relative;
+            justify-content: center;
+            font-size: larger;
+            padding-right:0%;
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
+            padding: 10px 5px 10px 5px;
+        }
+
+        li{
+            display: inline;
+            position: relative;
+            /* text-align: center; */
+            justify-content: center;
+            padding-left: 30px;
+            padding-right: 30px;
+            transition: transform 2s;
+        }
+        li:hover{
+            transform: scale(1.2,1.2);
+        }
+        .menu1:hover{
+            border: 2px solid white;
+            border-radius: 30px;
+            background-color: white;
+            color: black;
+            /* background-image: radial-gradient(purple, black); */
+        }
+        .menu1{
+            padding: 5px;
+            /* border: 2px solid red; */
+        }
+
+        nav{
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            background-color: black;
+        }
+
+        #home_comm{
+            font-family: 'Segoe UI';
+            margin-top: 10%;
+            text-align: center;
+            transition: transform 1s;
+        }
+        #home_comm:hover{
+            transform: scale(1.1,1.1);
+        }
+        #home_title{
+            font-size: 60px;
+        }
+
+        #home_desc{
+            font-size: 30px;
+            margin-top: -2%;
+        }
+        #dwldcv{
+            display: flex;
+            justify-content: center;
+            font-size: large;
+            font-family: 'Verdana', 'Geneva', 'Tahoma', 'sans-serif';
+            border: 2px solid white;
+            margin-left: 40%;
+            margin-right: 40%;
+            border-radius: 30px;
+            transition: transform .4s;
+        }
+        #dwldcv:hover{
+            transform: scale(1.1,1.1);
+        }
+        #dwldcv:hover{
+            border-radius: 30px;
+            background-color: rgb(255, 255, 255);
+            color: purple;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="coverbg">
+        <section id="home">
+            <div id="home_menu">
+                <nav>
+                    <!-- <div id="name_menu">
+                        <a href="#about">Portfolio</a>
+                    </div> -->
+                    <div id="menu">
+                        <ul>
+                            <li>
+                                <a class="menu1" href="about.html">About Me</a>
+                            </li>
+                            <li>
+                                <a class="menu1" href="qualification.html">Qualification</a>
+                            </li>
+                            <li>
+                                <a class="menu1" href="skill.html">Skills</a>
+                            </li>
+                            <li>
+                                <a class="menu1" href="project.html">Projects</a>
+                            </li>
+                            <li>
+                                <a class="menu1" href="contact.html">Contact Me</a>
+                            </li>
+                        </ul>
+                    </div> 
+                </nav>
+            </div>
+            <div id="home_comm">
+                <h1 id="home_title">
+                    Hi, it's me Shubham
+                </h1>
+                <p id="home_desc">Full Stack Developer</p>
+            </div>
+            <br>
+            <a id="dwldcv" href="my_cv.pdf" download>Download CV</a>
+            
+        </section>
+    </div>
+
+</body>
+</html>

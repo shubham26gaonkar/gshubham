@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <style>
+        #menu ul{
+            display: inline-flex;
+            position: relative;
+            justify-content: center;
+            font-size: larger;
+            padding-right:0%;
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
+            padding: 10px 5px 10px 5px;
+        }
+
+        li{
+            display: inline;
+            position: relative;
+            /* text-align: center; */
+            justify-content: center;
+            padding-left: 30px;
+            padding-right: 30px;
+            transition: transform 2s;
+        }
+        li:hover{
+            transform: scale(1.2,1.2);
+        }
+        .menu1:hover{
+            border: 2px solid white;
+            border-radius: 30px;
+            background-color: white;
+            color: black;
+            /* background-image: radial-gradient(purple, black); */
+        }
+        .menu1{
+            padding: 5px;
+            /* border: 2px solid red; */
+        }
+
+        nav{
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            background-color: black;
+        }
+
+         body{
+        margin: 0px;
+        padding: 0px;
+
+        }
+        nav{
+          justify-content: center;
+        }
+        #menu2{
+            padding-right: 0px;
+            margin-left: 275px;
+            margin-right: 280px;
+            font-size: larger;
+        }
+        #menu2 ul{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        #menu2 ul li {
+            padding-right: 20px;
+            padding-left: 25px;
+        }
+
+        /* skills css */
+        #skill{
+            height: 700px;
+            margin-top: 0px;
+            padding-top: 0.5px;
+            /* color: white; */
+            background-image: linear-gradient(to right,rgb(107, 3, 107), black);
+        }
+        #skill_title{
+            color: white;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            position: relative;
+            display:flex;
+            border-top: 4px double white;
+            border-bottom: 4px double white;
+            border-radius: 5%;
+            font-size: 23px;
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-top: 0px;
+            padding: 20px;
+            align-items: center;
+            text-align: center;
+            /* display: flex; */
+            justify-content: center;
+        }
+
+        #skill_row{
+            /* border: 2px solid white; */
+            margin-left: 3%;
+            margin-right: 3%;
+            margin-top: 0%;
+            height: 74%;
+            animation: fadein_skill 3s;
+        }
+        @keyframes fadein_skill{
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+        #skill_row1{
+            /* border: 2px solid white; */
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-left: 3%;
+            margin-right: 3%;
+            /* margin-top: 1%; */
+            height: 49%;
+        }
+        #skill_row2{
+            /* display: block; */
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            /* border: 2px solid white; */
+            margin-left: 3%;
+            margin-right: 3%;
+            height: 49%;
+        }
+        .skill_box{
+            border: 2px solid black;
+            text-align: center;
+            margin-top: 3%;
+            border-radius: 50px;
+            background-color: white;
+            /* margin-left: 3%;
+            margin-right: 3%; */
+            margin-top: 10px;
+            height: 70%;
+            width: 20%;
+            justify-content: space-around;
+            transition: transform .4s;
+        }
+        .skill_box:hover{
+            transform: scale(1.1,1.1);
+        }
+        .cssimg{
+            height: 90%;
+        }
+        .javaimg{
+            height: 60%;
+            padding-top: 8%;
+        }
+        .pyimg{
+            height: 55%;
+            padding-top: 20%;
+        }
+        .cimg{
+            height: 80%;
+            padding-top: 10%;
+        }
+        .phpimg{
+            height: 100%;
+        
+        }
+    </style>
+</head>
+<body>
+     <!-- Skills -->
+    <section id="skill">
+        <nav>
+            <!-- <div id="name_menu">
+                <a href="#about">Portfolio</a>
+            </div> -->
+            <div id="menu2">
+                <ul>
+                    <li>
+                        <a class="menu1" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="menu1" href="about.html">About Me</a>
+                    </li>
+                    <li>
+                        <a class="menu1" href="qualification.html">Qualification</a>
+                    </li>
+                    <li>
+                        <a class="menu1" href="project.html">Projects</a>
+                    </li>
+                    <li>
+                        <a class="menu1" href="contact.html">Contact Me</a>
+                    </li>
+                </ul>
+            </div> 
+        </nav>
+        <div>
+            <span id="skill_title">Skills</span>
+        </div>
+        <div id="skill_row">
+           <div id="skill_row1">
+               <div class="skill_box">
+                    <img class="cssimg" src="html_bg.png" alt="not found">
+               </div>
+               <div class="skill_box">
+                <img class="cssimg" src="css_bg.png" alt="not found">
+               </div>
+               <div class="skill_box">
+                    <img class="cssimg" src="js_bg.png" alt="Not found">
+               </div>
+               <div class="skill_box">
+                    <img class="javaimg" src="java.png" alt="">
+               </div>
+           </div>
+           <div id="skill_row2">
+                <div class="skill_box">
+                    <img class="pyimg" src="python.png" alt="">
+                </div>
+                <div class="skill_box">
+                    <img class="cimg" src="c_bg.png" alt="">
+                </div>
+                <div class="skill_box">
+                    <img class="cimg" src="c++bg.png" alt="">
+                </div>
+                <div class="skill_box">
+                    <img class="phpimg" src="php_bg.png" alt="">
+                </div>
+           </div>
+        </div> 
+    </section>
+</body>
+</html>
